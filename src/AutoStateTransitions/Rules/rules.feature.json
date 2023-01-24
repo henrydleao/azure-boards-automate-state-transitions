@@ -1,0 +1,11 @@
+{
+    "type": "Feature",
+    "rules": [
+      {
+        "ifChildState": "Active",
+        "notParentStates": [ "Active", "Resolved", "Closed", "Removed" ],
+        "setParentStateTo": "Active",
+        "allChildren": false
+      }
+    ]
+  }
